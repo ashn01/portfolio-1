@@ -30,7 +30,7 @@ function NavBar() {
             <div className={`navbar-container`}>
                 <div className={`navbar-divider`}>
                     <div className={`column`}>
-                        <Link to="/" onClick={()=>window.scrollTo(0,0)}>
+                        <Link to="/portfolio-1/" onClick={()=>window.scrollTo(0,0)}>
                             <div className={`nav-button`}>
                                 <p>
                                     ISABELLA
