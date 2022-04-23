@@ -1,0 +1,165 @@
+.footer{
+    width: 100%;
+    height: 907px;
+    background: #232323;
+
+    .footer-contents{
+        max-width: 1920px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-container{
+        padding: 0 100px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .footer-top{
+            height: 678px;
+            position: relative;
+            .footer-links-container{
+                width: 100%;
+                height: 100px;
+                .footer-links{
+                    padding: 0;
+                    list-style-type: none;
+                    float: right;
+                    li{
+                        float: left;
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    .be img{
+                        transform: translate(-3px, -3px);
+                    }
+                    
+                    li:not(:first-child):not(:last-child){
+                        padding: 0px 23px;
+                    }
+                }
+            }
+            .footer-message{
+                width: 100%;
+                position: absolute;
+                bottom: -50px;
+                p{
+                    text-align: left;
+                    width: 725px;
+                    font-family: 'TT Commons';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 98px;
+                    line-height: 108%;
+                    letter-spacing: -0.015em;
+                    display: inline-block;
+
+                    color: #FFFFFF;
+                }
+                .email-button{
+                    float: right;
+                    width: 200px;
+                    height: 60px;
+                    background: #FFFFFF;
+                    border-radius: 4px;
+                    position: absolute;
+                    bottom: 80px;
+                    right: 0;
+                    text-decoration: none;
+                    .text-container{
+                        height: 100%;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        p{
+                            margin: 0;
+                            font-family: 'TT Commons';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 131.5%;
+                            align-items: center;
+                            text-align: center;
+                            letter-spacing: 0.045em;
+                            color: #232323;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom{
+            height: 235px;
+            align-items: center;
+            justify-content: center;
+            .footer-bottom-left{
+                float: left;
+                height: 100%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                .footer-button{
+                    height: 60px;
+                    width: 200px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    margin: auto 0;
+                    p{
+                        padding-top: 8px;
+                        font-family: 'MonetaSans-Bold';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 25px;
+
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        letter-spacing: 0.062em;
+                        color: #EDEDED;
+                    }
+                }
+            }
+            .footer-bottom-right{
+                float: right;
+                height: 100%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                .footer-copyright{
+                    font-family: 'TT Commons';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 128.5%;
+                    letter-spacing: 0.005em;
+                    color: #767270;
+                }
+            }
+        }
+        hr{
+            width: 100%;
+            border: 1px solid #888888;
+        }
+    }
+    
+    
+    /* images */
+    .images{
+        width: 0px;
+        height: 0px;
+        position: relative;
+        .highlight{
+            z-index: 10;
+            width: 550px;
+            position: absolute;
+            left: -650px;
+            top: 10px;
+        }
+    }
+}

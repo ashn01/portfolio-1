@@ -1,0 +1,19 @@
+/* fonts */
+@font-face {
+    font-family: "MonetaSans-Bold";
+    src: url("../../public/fonts/MonetaSans-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "TT Commons";
+    src: url("../../public/fonts/TT\ Commons\ Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "Bodoni";
+    src: url("../../public/fonts/bodoni.ttf");
+}
+html{
+    background-color: #E5E5E5;
+}
+a {
+    text-decoration: none;
+}
