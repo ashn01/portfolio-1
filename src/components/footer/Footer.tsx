@@ -14,17 +14,17 @@ export default function Footer(){
                             <ul className={`footer-links`}>
                                 <li className={`linkedin`}>
                                     <a href="https://www.linkedin.com/in/isabella-ro-61b762178/">
-                                        <img src={`/images/in.png`}/>
+                                        <img src={`./images/in.png`}/>
                                     </a>
                                 </li>
                                 <li className={`be`}>
                                     <a href="https://www.behance.net/isabellaro">
-                                        <img src={`/images/be.png`}/>
+                                        <img src={`./images/be.png`}/>
                                     </a>
                                 </li>
                                 <li className={`email`}>
                                     <a href="mailto:yj.ro@me.com">
-                                        <img src={`/images/mail.png`}/>
+                                        <img src={`./images/mail.png`}/>
                                     </a>
                                 </li>
                             </ul>
@@ -34,7 +34,7 @@ export default function Footer(){
                                 </p>
                                 <a className={`email-button`} href="mailto:yj.ro@me.com">
                                     <div className={`images`}>
-                                        <img src={`/images/Highlight L.png`} className={`highlight`}/>
+                                        <img src={`./images/Highlight L.png`} className={`highlight`}/>
                                     </div>
                                     <div className={`text-container`}>
                                         <p>
