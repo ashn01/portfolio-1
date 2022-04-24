@@ -20,9 +20,9 @@ export default function Home(){
                 <h1 className={`animate__animated animate__slideInUp`}>
                     <div>
                         <p>An</p>
-                        <div className={`home-accent`}>
+                        <div className={`home-accent animate__animated animate__fadeIn`}>
                             <div className={`text-container`}>
-                                <p>Observant</p>
+                                <p className={`animate__animated animate__fadeIn`}>Observant</p>
                             </div>
                         </div> 
                         <p>UX & UI designer</p>
@@ -30,9 +30,9 @@ export default function Home(){
                     <div><p>with attention to detail and a</p></div>
                     <div>
                         <p>strong background in </p>
-                        <div className={`home-accent-second`}>
+                        <div className={`home-accent-second animate__animated animate__fadeIn`}>
                             <div className={`text-container visual-design`}>
-                                <p>Visual Design</p>
+                                <p className={`animate__animated animate__fadeIn`}>Visual Design</p>
                             </div>
                         </div>
                         .

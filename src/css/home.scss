@@ -3,7 +3,7 @@
     margin: 0 auto;
     max-width: 1021px;
     .home-greet{
-        margin-top: calc(50%);
+        margin-top: calc(50% - 50px);
         width: 100%;
 
         h1{
@@ -26,12 +26,14 @@
                 border-radius: 4px;
                 transform: translateY(-15px);
                 margin: 0 20px;
+                animation-delay: 0.7s;
                 .text-container{
                     height: 100%;
                     align-items: center;
                     display: flex;
                     justify-content: center;
                     p{
+                        animation-delay: 1.6s;
                         margin: 0;
                         font-family: 'MonetaSans-Bold';
                         font-style: normal;
@@ -57,12 +59,14 @@
                 border-radius: 4px;
                 transform: translateY(-3px);
                 margin: 0;
+                animation-delay: 0.7s;
                 .text-container{
                     height: 100%;
                     align-items: center;
                     display: flex;
                     justify-content: center;
                     p{
+                        animation-delay: 1.6s;
                         margin: 0;
                         font-family: 'Bodoni';
                         font-style: normal;
@@ -139,7 +143,7 @@
             position: absolute;
             left: -10px;
             top: -51px;
-            animation-delay: 0.7s;
+            animation-delay: 1.8s;
         }
         .name{
             width: 315px;
@@ -148,7 +152,7 @@
             position: absolute;
             left: 50px;
             top: -130px;
-            animation-delay: 0.7s;
+            animation-delay: 1.8s;
         }
         .pencil{
             width: 315px;
