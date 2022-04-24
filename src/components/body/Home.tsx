@@ -12,8 +12,8 @@ export default function Home(){
     return (
         <div className={`home`}>
             <div className={`images`}>
-                <img className={`arrow animate__animated animate__fadeIn`} src={`./${process.env.REACT_APP_URL}/images/Arrow.png`}/>
-                <img className={`name animate__animated animate__fadeIn`} src={`./${process.env.REACT_APP_URL}/images/Group 26.png`}/>
+                <img className={`arrow animate__animated animate__fadeIn`} src={`./images/Arrow.png`}/>
+                <img className={`name animate__animated animate__fadeIn`} src={`./images/Group 26.png`}/>
                 
             </div>
             <div className={`home-greet`}>
@@ -64,7 +64,7 @@ export default function Home(){
                 
                 <div className={`images`}>
                     <AnimationOnScroll animateOnce animateIn="animate__bounceInRight">
-                        <img className={`pencil`} src={`./${process.env.REACT_APP_URL}/images/Group 31.png`}/>
+                        <img className={`pencil`} src={`./images/Group 31.png`}/>
                     </AnimationOnScroll>
                 </div>
             </div>
