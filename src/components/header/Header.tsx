@@ -50,7 +50,7 @@ function NavBar() {
                         <ul className={`nav`}>
                             <li>
                                 <div className={`highlight`}>
-                                    <img src={`./portfolio-1/images/Highlight.png`} />
+                                    <img src={`./images/Highlight.png`} />
                                 </div>
                                 <p>Design</p>
                             </li>
