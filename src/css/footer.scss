@@ -88,11 +88,6 @@
                     }
                 }
 
-                
-                .email-button:hover .highlight-button{
-                    width: 90px;
-                    transition: 0.2s;
-                }
             }
         }
 
@@ -157,21 +152,6 @@
         hr{
             width: 100%;
             border: 1px solid #888888;
-        }
-    }
-    
-    
-    .highlight-button{
-        position: absolute;
-        width: 0px;
-        overflow-x: hidden;
-        height: 100%;
-        margin: 0 54px;
-        img{
-            width: 90px;
-            top: 13px;
-            left: 0;
-            position: absolute;
         }
     }
 

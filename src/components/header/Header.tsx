@@ -39,10 +39,7 @@ function NavBar() {
                         </Link>
                     </div>
                     <div className={`column`}>
-                        <div className={`nav-resume`}>
-                            <div className={`highlight-button`}>
-                                <img src={`./images/Highlight.png`} />
-                            </div>
+                        <div className={`nav-resume hvr-sweep-to-right neon`}>
                             <p>
                                 Resume
                             </p>
