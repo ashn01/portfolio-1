@@ -49,7 +49,7 @@ export default function Footer(){
                     <div className={`footer-bottom`}>
                         <div className={`footer-bottom-left`}>
                             <Link to={`/${process.env.REACT_APP_URL}`} onClick={()=>window.scrollTo(0,0)}>
-                                <div className={`footer-button`}>
+                                <div className={`footer-button hvr-sweep-to-right`}>
                                     <p>
                                         ISABELLA
                                     </p>

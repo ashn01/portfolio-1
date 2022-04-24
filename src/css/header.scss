@@ -6,8 +6,8 @@
     top: 0;
     position: fixed;
     z-index: 99;
+    background-color: rgba(246,245,243,0.7) !important;
 }
-
 
 /* navbar */
 
@@ -44,6 +44,7 @@
             align-items: center;
             display: flex;
             justify-content: center;
+            background-color: #F6F5F3;
             p{
                 color: #3E3E3E;
                 font-family: 'MonetaSans-Bold';
@@ -52,8 +53,16 @@
                 font-size: 25px;
                 letter-spacing: 0.062em;
                 text-align: center;
+                transform: translateY(3px);
             }
         }
+        .nav-button:hover{
+            transition: 0.3s;
+            p{
+                color:white;
+            }
+        }
+
         /* right */
         .nav{
             float: right;

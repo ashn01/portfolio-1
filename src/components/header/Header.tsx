@@ -10,9 +10,9 @@ export default function Header() {
     useEffect(()=>{
         $(document).scroll(()=>{
             if($(document).scrollTop()! > 50){
-                $(".navbar").css({backgroundColor:"#FEFEFE", transition:"1s"});
+                $(".navbar").css({backgroundColor:"rgba(254,254,254,0.7)", transition:"1s"});
             }else{
-                $(".navbar").css({backgroundColor:"#F6F5F3"});
+                $(".navbar").css({backgroundColor:"rgba(246,245,243,0.7)"});
             }
         })
     })
@@ -31,7 +31,7 @@ function NavBar() {
                 <div className={`navbar-divider`}>
                     <div className={`column`}>
                         <Link to={`/${process.env.REACT_APP_URL}`} onClick={()=>window.scrollTo(0,0)}>
-                            <div className={`nav-button`}>
+                            <div className={`nav-button hvr-sweep-to-right`}>
                                 <p>
                                     ISABELLA
                                 </p>
