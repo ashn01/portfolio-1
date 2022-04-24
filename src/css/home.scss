@@ -3,7 +3,7 @@
     margin: 0 auto;
     max-width: 1021px;
     .home-greet{
-        margin-top: 356px;
+        margin-top: 500px;
         width: 100%;
 
         h1{
@@ -139,6 +139,7 @@
             position: absolute;
             left: -10px;
             top: -51px;
+            animation-delay: 0.7s;
         }
         .name{
             width: 315px;
@@ -147,6 +148,7 @@
             position: absolute;
             left: 50px;
             top: -130px;
+            animation-delay: 0.7s;
         }
         .pencil{
             width: 315px;

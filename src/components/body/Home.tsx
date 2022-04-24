@@ -17,7 +17,7 @@ export default function Home(){
                 
             </div>
             <div className={`home-greet`}>
-                <h1>
+                <h1 className={`animate__animated animate__slideInUp`}>
                     <div>
                         <p>An</p>
                         <div className={`home-accent`}>
