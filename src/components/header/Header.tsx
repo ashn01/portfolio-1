@@ -40,6 +40,9 @@ function NavBar() {
                     </div>
                     <div className={`column`}>
                         <div className={`nav-resume`}>
+                            <div className={`highlight-button`}>
+                                <img src={`./portfolio-1/images/Highlight.png`} />
+                            </div>
                             <p>
                                 Resume
                             </p>
@@ -47,7 +50,7 @@ function NavBar() {
                         <ul className={`nav`}>
                             <li>
                                 <div className={`highlight`}>
-                                    <img src={`./images/Highlight.png`} />
+                                    <img src={`./portfolio-1/images/Highlight.png`} />
                                 </div>
                                 <p>Design</p>
                             </li>

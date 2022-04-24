@@ -36,6 +36,9 @@ export default function Footer(){
                                         <img src={`./images/Highlight L.png`} className={`highlight`}/>
                                 </div>
                                 <a className={`email-button`} href="mailto:yj.ro@me.com">
+                                    <div className={`highlight-button`}>
+                                        <img src={`./portfolio-1/images/Highlight.png`} />
+                                    </div>
                                     <div className={`text-container`}>
                                         <p>
                                             Email me
@@ -49,7 +52,7 @@ export default function Footer(){
                     <div className={`footer-bottom`}>
                         <div className={`footer-bottom-left`}>
                             <Link to={`/${process.env.REACT_APP_URL}`} onClick={()=>window.scrollTo(0,0)}>
-                                <div className={`footer-button hvr-sweep-to-right`}>
+                                <div className={`footer-button hvr-sweep-to-right white`}>
                                     <p>
                                         ISABELLA
                                     </p>

@@ -73,6 +73,7 @@
                         display: flex;
                         justify-content: center;
                         p{
+                            position: relative;
                             margin: 0;
                             font-family: 'TT Commons';
                             font-style: normal;
@@ -85,6 +86,12 @@
                             color: #232323;
                         }
                     }
+                }
+
+                
+                .email-button:hover .highlight-button{
+                    width: 90px;
+                    transition: 0.2s;
                 }
             }
         }
@@ -124,6 +131,11 @@
                         color: #EDEDED;
                     }
                 }
+                .footer-button:hover{
+                    p{
+                        color: #3E3E3E;
+                    }
+                }
             }
             .footer-bottom-right{
                 float: right;
@@ -149,6 +161,20 @@
     }
     
     
+    .highlight-button{
+        position: absolute;
+        width: 0px;
+        overflow-x: hidden;
+        height: 100%;
+        margin: 0 54px;
+        img{
+            width: 90px;
+            top: 13px;
+            left: 0;
+            position: absolute;
+        }
+    }
+
     /* images */
     .images{
         width: 0px;
@@ -162,4 +188,6 @@
             top: -130px;
         }
     }
+
+
 }
