@@ -1,4 +1,5 @@
 @import "general.scss";
+
 .home{
     margin: 0 auto;
     max-width: 1021px;
@@ -160,6 +161,11 @@
             left: 900px;
             top: 00px;
         }
+    }
+
+    .mix{
+        opacity: 0.1;
+        transition: 1s;
     }
 }
 

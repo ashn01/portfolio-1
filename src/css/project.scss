@@ -1,0 +1,143 @@
+.project{
+    
+    margin-top: calc(20%);
+    .project-container{
+        max-width: 1085px;
+        margin: 0 auto;
+    }
+    hr{
+        margin: 130px 0;
+    }
+}
+
+.project-title{
+    display: flex;
+    height: 100px;
+    gap: 123px;
+    div{
+        width: 50%;
+        h1{
+            font-family: 'TT Commons';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 111%;
+            letter-spacing: -0.023em;
+            color: #232323;
+            margin: 0;
+        }
+        h6{
+            font-family: 'TT Commons';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 127.5%;
+            letter-spacing: 0.005em;
+            color: #3E3E3E;
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+
+.project-background{
+    
+    .project-background-container{
+        display: flex;
+        gap: 100px;
+        div{
+            h3{
+                font-family: 'TT Commons';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 42px;
+                line-height: 131.5%;
+                letter-spacing: -0.013em;
+                color: #3E3E3E;
+            }
+            h6{
+                font-family: 'TT Commons';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 139.5%;
+                letter-spacing: 0.005em;
+                color: #3E3E3E;
+                text-align: left;
+            }
+        }
+    }
+    .project-background-container:nth-child(1){
+        flex: 3;
+    }
+    .project-background-container:nth-child(2){
+        flex: 7;
+    }
+
+    .project-background-list{
+        display: flex;
+        justify-content: space-evenly;
+        div{
+            h6{
+                font-family: 'TT Commons';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 131.5%;
+                letter-spacing: 0.045em;
+                color: #B5B5B5;
+            }
+            h5{
+                margin: 0;
+                font-family: 'TT Commons';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 128.5%;
+                letter-spacing: -0.013em;
+                color: #3E3E3E;
+            }
+        }
+    }
+}
+
+.project-detail{
+    .project-detail-title{
+        h3{
+            text-align: left;
+            font-family: 'TT Commons';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 131.5%;
+            letter-spacing: -0.013em;
+            color: #3E3E3E;
+        }
+        .project-detail-title-container{
+            display: flex;
+            gap: 46px;
+            h4{
+                text-align: left;
+                font-family: 'TT Commons';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 137.5%;
+                letter-spacing: -0.013em;
+                color: #3E3E3E;
+                margin: 0;
+            }
+            h6{
+                margin: 22px 0 0 0;
+                text-align: left;
+                font-family: 'TT Commons';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 139.5%;
+                letter-spacing: 0.005em;
+                color: #3E3E3E;
+            }
+        }
+    }
+}

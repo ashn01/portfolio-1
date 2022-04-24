@@ -5,6 +5,7 @@ import logo from './logo.svg';
 
 import Header from './components/header/Header'
 import Home from './components/body/Home'
+import Project from './components/body/Project'
 import Footer from './components/footer/Footer'
 
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
       <div className="App">
           <Routes>
             <Route path="/portfolio-1" element={<Home/>}/>
+            <Route path="/portfolio-1/:id" element={<Project/>}/>
           </Routes>
       </div>
       <Footer/>
