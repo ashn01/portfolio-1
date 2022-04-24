@@ -45,9 +45,24 @@ function NavBar() {
                             </p>
                         </div>
                         <ul className={`nav`}>
-                            <li><p>Design</p></li>
-                            <li><p>1min idea</p></li>
-                            <li><p>About</p></li>
+                            <li>
+                                <div className={`highlight`}>
+                                    <img src={`./images/Highlight.png`} />
+                                </div>
+                                <p>Design</p>
+                            </li>
+                            <li>
+                                <div className={`highlight`}>
+                                    <img src={`./images/Highlight.png`} />
+                                </div>
+                                <p>1min idea</p>
+                            </li>
+                            <li>
+                                <div className={`highlight`}>
+                                    <img src={`./images/Highlight.png`} />
+                                </div>
+                                <p>About</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
