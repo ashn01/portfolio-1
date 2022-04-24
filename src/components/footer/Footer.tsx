@@ -32,10 +32,10 @@ export default function Footer(){
                                 <p>
                                     Why don’t we work together?
                                 </p>
+                                <div className={`images`}>
+                                        <img src={`./portfolio-1/images/Highlight L.png`} className={`highlight`}/>
+                                </div>
                                 <a className={`email-button`} href="mailto:yj.ro@me.com">
-                                    <div className={`images`}>
-                                        <img src={`./images/Highlight L.png`} className={`highlight`}/>
-                                    </div>
                                     <div className={`text-container`}>
                                         <p>
                                             Email me
