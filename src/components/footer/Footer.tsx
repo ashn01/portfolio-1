@@ -37,7 +37,7 @@ export default function Footer(){
                                 </div>
                                 <a className={`email-button`} href="mailto:yj.ro@me.com">
                                     <div className={`highlight-button`}>
-                                        <img src={`./portfolio-1/images/Highlight.png`} />
+                                        <img src={`./images/Highlight.png`} />
                                     </div>
                                     <div className={`text-container`}>
                                         <p>
