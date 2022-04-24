@@ -12,7 +12,7 @@ export default function Header() {
             if($(document).scrollTop()! > 50){
                 $(".navbar").css({backgroundColor:"#FEFEFE", transition:"1s"});
             }else{
-                $(".navbar").css({backgroundColor:"#E5E5E5"});
+                $(".navbar").css({backgroundColor:"#F6F5F3"});
             }
         })
     })
