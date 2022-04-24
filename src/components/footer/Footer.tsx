@@ -33,7 +33,7 @@ export default function Footer(){
                                     Why don’t we work together?
                                 </p>
                                 <div className={`images`}>
-                                        <img src={`./portfolio-1/images/Highlight L.png`} className={`highlight`}/>
+                                        <img src={`./images/Highlight L.png`} className={`highlight`}/>
                                 </div>
                                 <a className={`email-button`} href="mailto:yj.ro@me.com">
                                     <div className={`text-container`}>
