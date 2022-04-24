@@ -12,9 +12,9 @@ export default function Header() {
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            $(".header").css({backgroundColor:"rgba(254,254,254,0.7)", transition:"top 0.1s ease-in-out", top:"-0px"});
+            $(".header").css({backgroundColor:"rgba(254,254,254,0.7)", transition:"top 0.3s ease-in-out", top:"-0px"});
         } else {
-            $(".header").css({backgroundColor:"rgba(246,245,243,0.7)", transition:"top 0.1s ease-in-out", top:"-138px"});
+            $(".header").css({backgroundColor:"rgba(246,245,243,0.7)", transition:"top 0.3s ease-in-out", top:"-138px"});
         }
         prevScrollpos = currentScrollPos;
         }
