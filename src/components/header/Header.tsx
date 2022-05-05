@@ -33,7 +33,7 @@ function NavBar() {
             <div className={`navbar-container`}>
                 <div className={`navbar-divider`}>
                     <div className={`column`}>
-                        <Link to={`/${process.env.REACT_APP_URL}`} onClick={()=>window.scrollTo(0,0)}>
+                        <Link to={`/${process.env.REACT_APP_URL}/`} onClick={()=>window.scrollTo(0,0)}>
                             <div className={`nav-button hvr-sweep-to-right`}>
                                 <p>
                                     ISABELLA
