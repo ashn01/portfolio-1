@@ -1,9 +1,11 @@
 import react, { useEffect, useLayoutEffect } from 'react'
 import {AnimationOnScroll } from 'react-animation-on-scroll';
 import $ from 'jquery'
+import {motion} from 'framer-motion'
 
 import "animate.css/animate.min.css";
 import '../../css/home.scss'
+import { Link } from 'react-router-dom';
 
 export default function Home(){
 
@@ -12,15 +14,14 @@ export default function Home(){
     });
 
     useEffect(()=>{
-        $(window).scroll(()=>{
-            if ($(".mix").offset()!.top - 600 < $(window).scrollTop()!){
-                $(".mix").css({"opacity":"1"})
-            }
-        })
     })
 
     return (
-        <div className={`home`}>
+        <motion.div className={`home`}
+            initial={{ x:window.innerWidth}} 
+            animate={{ x:0,transition:{duration:1} }} 
+            exit={{ x:-window.innerWidth,transition:{duration:0.5} }}
+        >
             <div className={`images`}>
                 <img className={`arrow animate__animated animate__fadeIn`} src={`./images/Arrow.png`}/>
                 <img className={`name animate__animated animate__fadeIn`} src={`./images/Group 26.png`}/>
@@ -56,32 +57,21 @@ export default function Home(){
             <div className={`home-contents`}>
                 <AnimationOnScroll animateOnce animateIn="animate__fadeIn">
                     <div className={`contents`}>
-                        <h2>TC Global Project</h2>
-                        <h6>Redesigning a community platform to connect people and share <br/>tamils stories including various brand in one website.</h6>
-                        <h6>2022</h6>
+                        <Link to={`/${process.env.REACT_APP_URL}/1`}>
+                            <h2>TC Global Project</h2>
+                            <h6>A complete design overhaul for a community platform to connect people and share tamils stories including various services in one website.</h6>
+                            <h6>2022 Jan - Work in progress</h6>
+                        </Link>
                     </div>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateOnce animateIn="animate__fadeIn">
                     <div className={`contents`}>
-                        <h2>TC Global</h2>
-                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>finibus nec velit ut, sodales condimentum libero.</h6>
-                        <h6>2022</h6>
+                        <h2>Open Room</h2>
+                        <h6>encourages individual users to feel motivated when studying through online study groups. </h6>
+                        <h6>2022 Feb - Work in progress</h6>
                     </div>
                 </AnimationOnScroll>
-                <AnimationOnScroll animateOnce animateIn="animate__fadeIn">
-                    <div className={`contents`}>
-                        <h2>MTD app</h2>
-                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>finibus nec velit ut, sodales condimentum libero.</h6>
-                        <h6>2022</h6>
-                    </div>
-                </AnimationOnScroll>
-                
-                <div className={`images mix`}>
-                    <AnimationOnScroll animateOnce animateIn="animate__bounceInUp" afterAnimatedIn={()=>$(".mix").css({"opacity":"1"})}>
-                        <img className={`pencil`} src={`./portfolio-1/images/Group 31.png`}/>
-                    </AnimationOnScroll>
-                </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

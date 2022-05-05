@@ -1,11 +1,23 @@
-import react from 'react'
+import react, { useEffect } from 'react'
+import {motion} from 'framer-motion'
 
 import '../../css/project.scss'
 
 export default function Project(){
+    useEffect(()=>{
+        const timeout = setTimeout(()=>{
+            window.scrollTo(0,0)
+            console.log("up")
+        },500)
 
+        return ()=>clearTimeout(timeout)
+    })
     return (
-    <div className={`project`}>
+    <motion.div className={`project`} 
+        initial={{ x:window.innerWidth}} 
+        animate={{ x:0,transition:{duration:1} }} 
+        exit={{ x:-window.innerWidth,transition:{duration:0.5} }}
+    >
         <div className={`project-container`}>
             <div className={`project-title`}>
                 <div>   
@@ -60,6 +72,6 @@ export default function Project(){
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
     )
 }

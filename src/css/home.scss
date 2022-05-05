@@ -4,7 +4,7 @@
     margin: 0 auto;
     max-width: 1021px;
     .home-greet{
-        margin-top: calc(50% - 50px);
+        margin-top: 45%;
         width: 100%;
 
         h1{
@@ -96,7 +96,7 @@
         margin: 0 auto;
         margin-top: 427px;
         margin-bottom: 631px;
-        max-width: 633px;
+        
         display:flex;
         flex-direction: column;
         gap: 240px;
@@ -108,24 +108,25 @@
             flex-direction: column;
             gap: 16px;
             h2{
-                margin: 0 auto;
+                margin: 0 0;
                 font-family: 'TT Commons';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 64px;
                 line-height: 111%;
-                text-align: center;
+                text-align: left;
                 letter-spacing: -0.023em;
                 color: #3E3E3E;
             }
             h6{
-                margin: 0 auto;
+                width: 580px;
+                margin: 0 0;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 17px;
+                font-size: 24px;
                 line-height: 151.5%;
-                text-align: center;
+                text-align: left;
                 letter-spacing: -0.035em;
                 color: #888888;
             }
