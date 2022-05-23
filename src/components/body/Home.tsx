@@ -17,41 +17,25 @@ export default function Home(){
     })
 
     return (
-        <motion.div className={`home`}
-            initial={{ x:window.innerWidth}} 
-            animate={{ x:0,transition:{duration:1} }} 
-            exit={{ x:-window.innerWidth,transition:{duration:0.5} }}
-        >
-            <div className={`images`}>
-                <img className={`arrow animate__animated animate__fadeIn`} src={`./images/Arrow.png`}/>
-                <img className={`name animate__animated animate__fadeIn`} src={`./images/Group 26.png`}/>
-                
-            </div>
+        <div className={`home`}>
             <div className={`home-greet`}>
-                <h1 className={`animate__animated animate__fadeIn`}>
-                    <div>
-                        <p>An</p>
-                        <div className={`hvr-grow-rotate`}>
-                            <div className={`home-accent animate__animated animate__fadeIn`}>
-                                <div className={`text-container`}>
-                                    <p className={`animate__animated animate__fadeIn`}>Observant</p>
-                                </div>
-                            </div> 
-                        </div>
-                        <p>UX & UI designer</p>
+                <h1 >
+                    <div className={`animate__animated animate__slideInUp `}>
+                        <p className={`animate__animated animate__fadeIn`}>
+                        Hi there, I’m Isabella.
+                        </p>
                     </div> 
-                    <div><p>with attention to detail and a</p></div>
-                    <div>
-                        <p>strong background in </p>
-                        <div className={`hvr-grow-rotate`}>
-                            <div className={`home-accent-second animate__animated animate__fadeIn`}>
-                                <div className={`text-container visual-design`}>
-                                    <p className={`animate__animated animate__fadeIn`}>Visual Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        .
+                    <div className={`animate__animated animate__slideInUp `}>
+                        <p className={`animate__animated animate__fadeIn`}>
+                        An <div className={`home-greet-accent-container`}><p className={`home-greet-accent-1`}>observant</p></div> UX & UI designer  
+                        </p>
+                    </div>
+                    <div className={`animate__animated animate__slideInUp `}>
+                        <p className={`animate__animated animate__fadeIn`}>with attention to detail &</p>
                     </div> 
+                    <div className={`animate__animated animate__slideInUp `}>
+                        <p className={`animate__animated animate__fadeIn`}>a strong background in <div className={`home-greet-accent-container2`}><p className={`home-greet-accent-2`}>visual design</p></div> .</p>
+                    </div>
                 </h1>
             </div>
             <div className={`home-contents`}>
@@ -72,6 +56,6 @@ export default function Home(){
                     </div>
                 </AnimationOnScroll>
             </div>
-        </motion.div>
+        </div>
     )
 }

@@ -13,11 +13,78 @@
             font-weight: 600;
             font-size: 72px;
             line-height: 117%;
-            text-align: center;
+            text-align: left;
             letter-spacing: -0.023em;   
             color: #232323;
 
-            .home-accent{
+            /* animation */
+            div{
+                animation-duration: 1s;
+            }
+            p{
+                animation-duration: 1s;
+            }
+            $n:4;
+            @for $i from 1 through $n {
+                div:nth-child(#{$i}){
+                    animation-delay: $i * 1s;
+                    p{
+                        animation-delay: $i * 1s;
+                    }
+                }
+            }
+
+            .home-greet-accent-container{
+                display: inline-block;
+                width: 290px;
+                .home-greet-accent-1{
+                    margin: 0 8px;
+                    overflow: hidden;
+                    display: inline-flex;
+                    width: 0px;
+                    animation: appearAnimation ease 1s forwards;
+                    animation-delay: 5s;
+                    background: #D0FC53;
+                }
+            }
+
+            .home-greet-accent-container2{
+                display: inline-block;
+                width: 350px;
+                .home-greet-accent-2{
+                    margin: 0 8px;
+                    overflow: hidden;
+                    display: inline-flex;
+                    width: 0px;
+                    animation: appearAnimation2 ease 1s forwards;
+                    animation-delay: 6s;
+                    background: #D0FC53;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            @keyframes appearAnimation {
+                from{
+                    width: 0px;
+                }
+
+                to{
+                    width: 274px;
+                }
+            }
+
+            @keyframes appearAnimation2 {
+                from{
+                    width: 0px;
+                }
+
+                to{
+                    width: 350px;
+                }
+            }
+
+            /*.home-accent{
                 display: inline-block;
                 width: 282px;
                 height: 80px;
@@ -80,7 +147,7 @@
                         color: #3E3E3E;
                     }
                 }
-            }
+            }*/
         }
         
         h1 div{
