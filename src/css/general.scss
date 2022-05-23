@@ -15,9 +15,29 @@
     font-family: "Bodoni";
     src: url("../../public/fonts/bodoni.ttf");
 }
-html{
-    background-color: #F6F5F3;
+@font-face {
+    font-family: "SF UI Display";
+    src: url("../../public/fonts/sf-ui-display-medium.otf") format("opentype");
 }
+@font-face {
+    font-family: "SF UI Display thin";
+    src: url("../../public/fonts/sf-ui-display-thin.otf") format("opentype");
+}
+html{
+    background-color: black;
+
+}
+
+.background-white {
+  background: linear-gradient(to top, white 50%, transparent 50%);
+  transition: 2s ease;
+}
+
+.white {
+  color: black !important;
+  transition: 2s ease;
+}
+
 a {
     text-decoration: none;
 }

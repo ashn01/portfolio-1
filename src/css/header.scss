@@ -6,13 +6,14 @@
     top: 0;
     position: fixed;
     z-index: 99;
-    background-color: rgba(246,245,243,0.7) !important;
 }
 
 /* navbar */
 
 .navbar{
     height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -36,31 +37,15 @@
     .column{
         flex: 50%;
         /* left */
-        .nav-button{
-            height: 100%;
-            width: 200px;
-            border-radius: 4px;
-            border: 1px solid #232323;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: #F6F5F3;
-            p{
-                color: #3E3E3E;
-                font-family: 'MonetaSans-Bold';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 25px;
-                letter-spacing: 0.062em;
-                text-align: center;
-                transform: translateY(3px);
-            }
-        }
-        .nav-button:hover{
-            transition: 0.3s;
-            p{
-                color:white;
-            }
+        .nav-left{
+            font-family: 'SF UI Display thin';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140.5%;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 0.062em;
         }
 
         /* right */
@@ -75,13 +60,14 @@
             li{
                 width: 91px;
                 float: left;
-                font-family: 'TT Commons';
+                font-family: 'SF UI Display thin';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: center;
-                letter-spacing: -0.02em;
-                color: #232323;
+                letter-spacing: 0.045em;
+                text-transform: uppercase;
+                color: white;
             }
 
             li:hover .highlight{
@@ -90,7 +76,7 @@
             }
 
             li:not(:first-child):not(:last-child){
-                padding: 0px 17px;
+                padding: 0px 174px;
             }
         }
 

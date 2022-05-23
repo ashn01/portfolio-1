@@ -11,12 +11,34 @@ export default function Header() {
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
+        
         if (prevScrollpos > currentScrollPos) {
-            $(".header").css({backgroundColor:"rgba(254,254,254,0.7)", transition:"top 0.3s ease-in-out", top:"-0px"});
+            $(".header").css({height:"100px", transition:"top 0.3s ease-in-out", top:"-0px"});
         } else {
-            $(".header").css({backgroundColor:"rgba(246,245,243,0.7)", transition:"top 0.3s ease-in-out", top:"-138px"});
+            $(".header").css({height:"100px", transition:"top 0.3s ease-in-out", top:"-138px"});
         }
+
+        if (currentScrollPos == 0){
+            $(".header").css({height:"138px", transition:"top 0.3s ease-in-out", top:"-0px"});
+        }
+
+        // color change effect
+        if(currentScrollPos > 0){
+            $("html").addClass("background-white");
+            $("h1").addClass("white");
+            $(".nav li").addClass("white");
+            $(".nav-left").addClass("white");
+          }
         prevScrollpos = currentScrollPos;
+
+        // end event
+        if ($(window).scrollTop()! + $(window).height()! == $(document).height()){
+            $(".header").css({height:"138px", transition:"top 0.3s ease-in-out", top:"-0px"});
+            
+            $(".nav li").removeClass("white");
+            $(".nav-left").removeClass("white");
+        }
+
         }
     })
 
@@ -29,30 +51,21 @@ export default function Header() {
 
 function NavBar() {
     return (
-        <div className={`navbar`}>
+        <div className={`animate__animated animate__fadeIn navbar`}>
             <div className={`navbar-container`}>
                 <div className={`navbar-divider`}>
                     <div className={`column`}>
-                        <Link to={`/${process.env.REACT_APP_URL}/`} onClick={()=>window.scrollTo(0,0)}>
-                            <div className={`nav-button hvr-sweep-to-right`}>
-                                <p>
-                                    ISABELLA
-                                </p>
-                            </div>
-                        </Link>
+                        <p className={`nav-left`}>
+                            ISabella Ro<br/> UIUX DESIGNER BASED IN TORONTO <br/>Click here to see <u><b>resume</b></u>
+                        </p>
                     </div>
                     <div className={`column`}>
-                        <div className={`nav-resume hvr-sweep-to-right neon`}>
-                            <p>
-                                Resume
-                            </p>
-                        </div>
                         <ul className={`nav`}>
                             <li>
                                 <div className={`highlight`}>
                                     <img src={`./images/Highlight.png`} />
                                 </div>
-                                <p>Design</p>
+                                <p>Project</p>
                             </li>
                             <li>
                                 <div className={`highlight`}>
@@ -64,7 +77,7 @@ function NavBar() {
                                 <div className={`highlight`}>
                                     <img src={`./images/Highlight.png`} />
                                 </div>
-                                <p>About</p>
+                                <p>Info</p>
                             </li>
                         </ul>
                     </div>

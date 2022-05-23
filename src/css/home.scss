@@ -2,20 +2,20 @@
 
 .home{
     margin: 0 auto;
-    max-width: 1021px;
+    max-width: 1489px;
     .home-greet{
-        margin-top: 45%;
+        margin: 30vh 0;
         width: 100%;
-
+        height: 50vh;
         h1{
-            font-family: 'TT Commons';
+            font-family: 'SF UI Display';
             font-style: normal;
-            font-weight: 600;
-            font-size: 72px;
+            font-weight: 300;
+            font-size: 92px;
             line-height: 117%;
             text-align: left;
             letter-spacing: -0.023em;   
-            color: #232323;
+            color: white;
 
             /* animation */
             div{
@@ -36,7 +36,8 @@
 
             .home-greet-accent-container{
                 display: inline-block;
-                width: 290px;
+                width: 400px;
+                color: black;
                 .home-greet-accent-1{
                     margin: 0 8px;
                     overflow: hidden;
@@ -50,7 +51,8 @@
 
             .home-greet-accent-container2{
                 display: inline-block;
-                width: 350px;
+                width: 510px;
+                color: black;
                 .home-greet-accent-2{
                     margin: 0 8px;
                     overflow: hidden;
@@ -70,7 +72,7 @@
                 }
 
                 to{
-                    width: 274px;
+                    width: 400px;
                 }
             }
 
@@ -80,7 +82,7 @@
                 }
 
                 to{
-                    width: 350px;
+                    width: 510px;
                 }
             }
 
