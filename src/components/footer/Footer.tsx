@@ -10,56 +10,39 @@ export default function Footer(){
             <div className={`footer-contents`}>
                 <div className={`footer-container`}>
                     <div className={`footer-top`}>
-                        <div className={`footer-links-container`}>
-                            <ul className={`footer-links`}>
-                                <li className={`linkedin`}>
-                                    <a href="https://www.linkedin.com/in/isabella-ro-61b762178/">
-                                        <img src={`./images/in.png`}/>
-                                    </a>
-                                </li>
-                                <li className={`be`}>
-                                    <a href="https://www.behance.net/isabellaro">
-                                        <img src={`./images/be.png`}/>
-                                    </a>
-                                </li>
-                                <li className={`email`}>
-                                    <a href="mailto:yj.ro@me.com">
-                                        <img src={`./images/mail.png`}/>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div className={`footer-message`}>
-                                <p>
-                                    Why don’t we work together?
+                        <div className={`footer-message`}>
+                            <div>
+                                <p className={`footer-main-message`}>
+                                    Why don’t we work<br/> together?
                                 </p>
-                                <div className={`images`}>
-                                        <img src={`./images/Highlight L.png`} className={`highlight`}/>
-                                </div>
-                                <a className={`email-button`} href="mailto:yj.ro@me.com">
-                                    <div className={`text-container hvr-sweep-to-right neon`}>
-                                        <p>
-                                            Email me
-                                        </p>
-                                    </div>
-                                </a>
+                            </div>
+                            <div>
+                                <p className={`footer-sub-message`}>
+                                    Pop me an email at yj.ro@me.com - <br />I’d love to hear from you!
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <hr/>
                     <div className={`footer-bottom`}>
-                        <div className={`footer-bottom-left`}>
-                            <Link to={`/${process.env.REACT_APP_URL}/`} onClick={()=>window.scrollTo(0,0)}>
-                                <div className={`footer-button hvr-sweep-to-right white`}>
-                                    <p>
-                                        ISABELLA
-                                    </p>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className={`footer-bottom-right`}>
-                            <p className={`footer-copyright`}>
-                            Copyright © 2022 Isabella Portfolio website All Rights Reserved
-                            </p>
+                        <div className={`footer-bottom-container`}>
+                            <div className={`footer-bottom-left`}>
+                                <p className={`footer-copyright`}>
+                                    ©2022 All Rights Reserved
+                                </p>
+                            </div>
+                            <div className={`footer-bottom-right`}>
+                                <ul className={`footer-item-list`}>
+                                    <li>
+                                        <a href={`https://www.linkedin.com/in/isabella-ro-61b762178/`}><img src={`${process.env.PUBLIC_URL}/images/Linkedin.svg`} alt={`Linkedin`}/></a>
+                                    </li>
+                                    <li>
+                                        <a href={`https://www.linkedin.com/in/isabella-ro-61b762178/`}><img src={`${process.env.PUBLIC_URL}/images/Behance.svg`} alt={`Behance`}/></a>
+                                    </li>
+                                    <li>
+                                        <a href={`https://www.linkedin.com/in/isabella-ro-61b762178/`}><img src={`${process.env.PUBLIC_URL}/images/mail.svg`} alt={`Email`}/></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

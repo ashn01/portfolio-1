@@ -1,7 +1,11 @@
 /* fonts */
 @font-face {
-    font-family: "MonetaSans-Bold";
-    src: url("../../public/fonts/MonetaSans-Bold.otf") format("opentype");
+  font-family: "MonetaSans-Bold";
+  src: url("../../public/fonts/MonetaSans-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "MonetaSans-Regular";
+  src: url("../../public/fonts/MonetaSans-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: "TT Commons";
@@ -23,13 +27,17 @@
     font-family: "SF UI Display thin";
     src: url("../../public/fonts/sf-ui-display-thin.otf") format("opentype");
 }
+@font-face {
+    font-family: "SF UI Display light";
+    src: url("../../public/fonts/sf-ui-display-light.otf") format("opentype");
+}
 html{
     background-color: black;
 
 }
 
 .background-white {
-  background: linear-gradient(to top, white 50%, transparent 50%);
+  background: linear-gradient(to top, white 0%, transparent 50%);
   transition: 2s ease;
 }
 

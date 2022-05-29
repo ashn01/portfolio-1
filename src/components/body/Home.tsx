@@ -27,14 +27,23 @@ export default function Home(){
                     </div> 
                     <div className={`animate__animated animate__slideInUp `}>
                         <p className={`animate__animated animate__fadeIn`}>
-                        An <div className={`home-greet-accent-container`}><p className={`home-greet-accent-1`}>observant</p></div> UX & UI designer  
+                        An <div className={`home-greet-accent-container`}>
+                                <div className={`home-greet-accent-1-container`}>
+                                    <p className={`home-greet-accent-1`}>observant</p>
+                                </div>
+                            </div> UX & UI designer  
                         </p>
                     </div>
                     <div className={`animate__animated animate__slideInUp `}>
                         <p className={`animate__animated animate__fadeIn`}>with attention to detail &</p>
                     </div> 
                     <div className={`animate__animated animate__slideInUp `}>
-                        <p className={`animate__animated animate__fadeIn`}>a strong background in <div className={`home-greet-accent-container2`}><p className={`home-greet-accent-2`}>visual design</p></div> .</p>
+                        <p className={`animate__animated animate__fadeIn`}>a strong background in 
+                        <div className={`home-greet-accent-container2`}>
+                            <div className={`home-greet-accent-2-container`}>
+                                <p className={`home-greet-accent-2`}>visual design</p>
+                            </div>
+                        </div>.</p>
                     </div>
                 </h1>
             </div>
@@ -51,7 +60,7 @@ export default function Home(){
                 <AnimationOnScroll animateOnce animateIn="animate__fadeIn">
                     <div className={`contents`}>
                         <h2>Open Room</h2>
-                        <h6>encourages individual users to feel motivated when studying through online study groups. </h6>
+                        <h6>Encourages individual users to feel motivated when studying through online study groups. </h6>
                         <h6>2022 Feb - Work in progress</h6>
                     </div>
                 </AnimationOnScroll>
