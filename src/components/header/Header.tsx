@@ -28,6 +28,8 @@ export default function Header() {
             $("h1").addClass("white");
             $(".nav li").addClass("white");
             $(".nav-left").addClass("white");
+            $(".home-greet-accent-1-container").css({"animation":"appearAnimation ease 1s forwards"})
+            $(".home-greet-accent-2-container").css({"animation":"appearAnimation2 ease 1s forwards"})
           }
         prevScrollpos = currentScrollPos;
 

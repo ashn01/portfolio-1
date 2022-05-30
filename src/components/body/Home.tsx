@@ -27,7 +27,7 @@ export default function Home(){
                     </div> 
                     <div className={`animate__animated animate__slideInUp `}>
                         <p className={`animate__animated animate__fadeIn`}>
-                        An <div className={`home-greet-accent-container`}>
+                        An <div className={`home-greet-accent-container`} onClick={()=>$(".home-greet-accent-1-container").css({"animation":"appearAnimation ease 1s forwards"})}>
                                 <div className={`home-greet-accent-1-container`}>
                                     <p className={`home-greet-accent-1`}>observant</p>
                                 </div>
@@ -39,7 +39,7 @@ export default function Home(){
                     </div> 
                     <div className={`animate__animated animate__slideInUp `}>
                         <p className={`animate__animated animate__fadeIn`}>a strong background in 
-                        <div className={`home-greet-accent-container2`}>
+                        <div className={`home-greet-accent-container2`} onClick={()=>$(".home-greet-accent-2-container").css({"animation":"appearAnimation2 ease 1s forwards"})}>
                             <div className={`home-greet-accent-2-container`}>
                                 <p className={`home-greet-accent-2`}>visual design</p>
                             </div>

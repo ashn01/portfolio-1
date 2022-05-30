@@ -23,17 +23,17 @@
 
             /* animation */
             div{
-                animation-duration: 0.5s;
+                animation-duration: 0.3s;
             }
             p{
-                animation-duration: 0.5s;
+                animation-duration: 0.3s;
             }
             $n:4;
             @for $i from 1 through $n {
                 div:nth-child(#{$i}){
-                    animation-delay: $i * 0.5s;
+                    animation-delay: $i * 0.3s;
                     p{
-                        animation-delay: $i * 0.5s;
+                        animation-delay: $i * 0.3s;
                     }
                 }
             }
@@ -45,11 +45,13 @@
                 width: 360px;
                 overflow: hidden;
                 position: relative;
+                cursor: pointer;
                 .home-greet-accent-1-container{
                     background: #D0FC53;
-                    animation: appearAnimation ease 1s forwards;
-                    animation-delay: 2.5s;
+                    // animation: appearAnimation ease 1s forwards;
+                    // animation-delay: 2.5s;
                     overflow: hidden;
+                    position: relative;
                     width: 0px;
                     .home-greet-accent-1{
                         position: absolute;
@@ -71,11 +73,13 @@
                 color: black;
                 transform: translateY(23px);
                 margin: 0 10px 0 16px;
+                cursor: pointer;
                 .home-greet-accent-2-container{
                     background: #D0FC53;
-                    animation: appearAnimation2 ease 1s forwards;
-                    animation-delay: 3s;
+                    // animation: appearAnimation2 ease 1s forwards;
+                    // animation-delay: 3s;
                     overflow: hidden;
+                    position: relative;
                     width: 0px;
                     .home-greet-accent-2{
                         position: absolute;
@@ -111,71 +115,6 @@
                     width: 470px;
                 }
             }
-
-            /*.home-accent{
-                display: inline-block;
-                width: 282px;
-                height: 80px;
-                background: #FEFEFE;
-                border: 1px solid #3E3E3E;
-                box-sizing: border-box;
-                border-radius: 4px;
-                transform: translateY(-15px);
-                margin: 0 20px;
-                animation-delay: 0.7s;
-                .text-container{
-                    height: 100%;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
-                    p{
-                        animation-delay: 1.6s;
-                        margin: 0;
-                        font-family: 'MonetaSans-Bold';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 51px;
-                        line-height: 138.5%;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.013em;
-                        color: #3E3E3E;
-                        transform: translateY(4px);
-                    }
-                }
-            }
-            
-            .home-accent-second{
-                display: inline-block;
-                width: 374px;
-                height: 80px;
-                background: #FEFEFE;
-                border: 1px solid #3E3E3E;
-                box-sizing: border-box;
-                border-radius: 4px;
-                transform: translateY(-3px);
-                margin: 0;
-                animation-delay: 0.7s;
-                .text-container{
-                    height: 100%;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
-                    p{
-                        animation-delay: 1.6s;
-                        margin: 0;
-                        font-family: 'Bodoni';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 50px;
-                        line-height: 138.5%;
-                        align-items: center;
-                        text-align: center;
-                        letter-spacing: -0.003em;
-                        color: #3E3E3E;
-                    }
-                }
-            }*/
         }
         
         h1 div{
