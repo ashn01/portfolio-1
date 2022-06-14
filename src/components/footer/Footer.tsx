@@ -42,6 +42,10 @@ export default function Footer(){
                                         <a href={`https://www.linkedin.com/in/isabella-ro-61b762178/`}><img src={`${process.env.PUBLIC_URL}/images/mail.svg`} alt={`Email`}/></a>
                                     </li>
                                 </ul>
+                                <div onClick={()=>window.scrollTo({top:0, behavior:"smooth"})} style={{backgroundColor:"#D0FC53", width:"64px",height:"64px", cursor:"pointer"}}>
+                                    <img src={`./portfolio-1/images/Arrow.svg`} style={{position:"absolute", transform:"translate(21px, 18px)", width:"24px"}}/>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

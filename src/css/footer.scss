@@ -54,16 +54,18 @@
             flex: 1;
             align-items: center;
             justify-content: center;
+            position: relative;
             .footer-bottom-container{
                 width: 100%;
                 position: absolute;
                 bottom: 80px;
+                display: flex;
                 .footer-bottom-left{
                     float: left;
                     height: 100%;
                     align-items: center;
                     display: flex;
-                    justify-content: center;
+                    flex: 1;
                     .footer-copyright{
                         font-family: 'SF UI Display Regular';
                         font-style: normal;
@@ -75,14 +77,13 @@
                     }
                 }
                 .footer-bottom-right{
-                    float: right;
                     height: 100%;
                     align-items: center;
                     display: flex;
-                    justify-content: center;
+                    flex: 1;
+                    justify-content: space-between;
                     .footer-item-list{
                         list-style-type: none;
-                        margin-right: 600px;
                         li:nth-child(2){
                             transform: translate(-1px, -3px);
                         }
